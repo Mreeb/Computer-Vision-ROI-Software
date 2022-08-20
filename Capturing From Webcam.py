@@ -12,7 +12,7 @@ capture = cv2.VideoCapture(1, cv2.CAP_DSHOW)      ## this opnes the camera and "
  
 while(True):      
 
-    lower_fps_value = 0.2          ## Contolling the FPS Customize if you want.                 
+    lower_fps_value = 0          ## Contolling the FPS Customize if you want you can slow it too.                 
     time.sleep(lower_fps_value)                             
 
     (grabbed,frame) = capture.read()    ## Reading the captured frames from the video
