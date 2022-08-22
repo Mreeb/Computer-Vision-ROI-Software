@@ -19,7 +19,9 @@ print("=> NOTE: YOU CAN CAPTURE AGAIN AS WELL AFTER RESUME. ")
 
 class staticROI(object):
     def __init__(self):
-        self.capture = cv2.VideoCapture(0)
+        self.capture = cv2.VideoCapture(0) # For Laptop Camera
+        self.capture = cv2.VideoCapture(0, cv2.CAP_DSHOW) # For any external Camera other than laptop.
+        
 
         # Bounding box reference points and boolean if we are extracting coordinates
         self.image_coordinates = []
